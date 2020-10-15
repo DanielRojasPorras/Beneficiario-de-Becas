@@ -2,7 +2,7 @@
 
 Estudiante::Estudiante()
 {
-    id = "";
+    id = 0;
     nombre = "";
     apellido = "";
     telefono = "";
@@ -16,7 +16,7 @@ Estudiante::~Estudiante()
 {
     //dtor
 }
-Estudiante::Estudiante(string id, string nom, string apellido, string tel, string correo,
+Estudiante::Estudiante(int id, string nom, string apellido, string tel, string correo,
                        string resp, string numCuenta, string tipo)
 {
     this->id = id;
@@ -29,7 +29,7 @@ Estudiante::Estudiante(string id, string nom, string apellido, string tel, strin
     this->tipoBeca = tipo;
 }
 
-void Estudiante::setId(string id)
+void Estudiante::setId(int id)
 {
     this->id = id;
 
@@ -77,7 +77,7 @@ void Estudiante::setTipoBeca(string tipo)
     this->tipoBeca = tipo;
 }
 
-string Estudiante::getId()
+int Estudiante::getId()
 {
     return id;
 }

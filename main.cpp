@@ -1,9 +1,11 @@
 #include <iostream>
-
+#include "Interfaz.h"
 using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    system("color B5");
+    Interfaz i;
+    i.Menu();
     return 0;
 }

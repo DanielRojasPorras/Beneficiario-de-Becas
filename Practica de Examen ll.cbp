@@ -35,8 +35,13 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/Estudiante.h" />
+		<Unit filename="include/Interfaz.h" />
+		<Unit filename="include/Lista.h" />
+		<Unit filename="include/Nodo.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Estudiante.cpp" />
+		<Unit filename="src/Interfaz.cpp" />
+		<Unit filename="src/Lista.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

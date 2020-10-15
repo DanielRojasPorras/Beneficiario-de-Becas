@@ -9,10 +9,10 @@ class Estudiante
 {
     public:
         Estudiante();
-        Estudiante(string,string,string,string,string,string,string,string);
+        Estudiante(int,string,string,string,string,string,string,string);
         virtual ~Estudiante();
 
-        void setId(string);
+        void setId(int);
         void setNombre(string);
         void setApellido(string);
         void setTelefono(string);
@@ -21,7 +21,7 @@ class Estudiante
         void setNumCuenta(string);
         void setTipoBeca(string);
 
-        string getId();
+        int getId();
         string getNombre();
         string getApellido();
         string getTelefono();
@@ -36,7 +36,7 @@ class Estudiante
     protected:
 
     private:
-        string id;
+        int id;
         string nombre;
         string apellido;
         string telefono;
