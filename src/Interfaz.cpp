@@ -28,10 +28,11 @@ void Interfaz::Menu()
 
         cout << "\n\nMenu de Opciones" << endl;
         cout << "1. Ingresar" << endl;
-        cout << "2. Mostrar" << endl;
+        cout << "2. Buscar" << endl;
         cout << "3. Editar" << endl;
         cout << "4. Borrar" << endl;
-        cout << "5. SALIR" << endl;
+        cout << "5. Listar" << endl;
+        cout << "6. SALIR" << endl;
 
         cout << "\nIngrese una opcion: ";
         cin >> opcion;
@@ -44,12 +45,15 @@ void Interfaz::Menu()
             system("pause>nul"); // Pausa
             break;
 
-        case 2:
+        case 2:{
             // Lista de instrucciones de la opción 2
-            l->Mostrar(1);
+            int id;
+            cout<<"Identificacion del Estudiante\n";
+            cin>>id;
+            cout<<l->Buscar(id)->toString();
             system("pause>nul"); // Pausa
             break;
-
+        }
         case 3:{
             // Lista de instrucciones de la opción 3
             int id;
@@ -59,17 +63,24 @@ void Interfaz::Menu()
             system("pause>nul"); // Pausa
             break;
         }
-        case 4:
+        case 4:{
             // Lista de instrucciones de la opción 4
             int id;
             cout<<"Identificacion del Estudiante\n";
             cin>>id;
-            l->Borrar(id);
+            l->Eliminar(l->Buscar(id));
             system("pause>nul"); // Pausa
             break;
         }
+            case 5:{
+            // Lista de instrucciones de la opción 4
+            l->Mostrar(1);
+            system("pause>nul"); // Pausa
+            break;
+            }
+        }
     }
-    while (opcion != 5);              // En vez de 5 pones el número de la opción de SALIDA
+    while (opcion != 6);              // En vez de 5 pones el número de la opción de SALIDA
 
 //Basado en: https://algoritmosyalgomas.com/plantilla-de-un-menu-de-opciones-en-c/
 }

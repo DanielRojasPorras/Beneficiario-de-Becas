@@ -2,7 +2,7 @@
 1584209020 source:g:\ll ciclo 2020\estructuras de datos\practica de examen ll\main.cpp
 	<iostream>
 
-1602714642 source:g:\ll ciclo 2020\estructuras de datos\practica de examen ll\beneficiario-de-becas\main.cpp
+1602780286 source:g:\ll ciclo 2020\estructuras de datos\practica de examen ll\beneficiario-de-becas\main.cpp
 	<iostream>
 	"Interfaz.h"
 
@@ -16,17 +16,17 @@
 1602711542 g:\ll ciclo 2020\estructuras de datos\practica de examen ll\beneficiario-de-becas\include\nodo.h
 	"Estudiante.h"
 
-1602727582 source:g:\ll ciclo 2020\estructuras de datos\practica de examen ll\beneficiario-de-becas\src\interfaz.cpp
+1602781006 source:g:\ll ciclo 2020\estructuras de datos\practica de examen ll\beneficiario-de-becas\src\interfaz.cpp
 	"Interfaz.h"
 
 1602718388 g:\ll ciclo 2020\estructuras de datos\practica de examen ll\beneficiario-de-becas\include\interfaz.h
 	"Lista.h"
 
-1602728102 g:\ll ciclo 2020\estructuras de datos\practica de examen ll\beneficiario-de-becas\include\lista.h
+1602780286 g:\ll ciclo 2020\estructuras de datos\practica de examen ll\beneficiario-de-becas\include\lista.h
 	"Nodo.h"
 	<stdlib.h>
 	<fstream>
 
-1602728102 source:g:\ll ciclo 2020\estructuras de datos\practica de examen ll\beneficiario-de-becas\src\lista.cpp
+1602780888 source:g:\ll ciclo 2020\estructuras de datos\practica de examen ll\beneficiario-de-becas\src\lista.cpp
 	"Lista.h"
 

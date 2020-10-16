@@ -13,9 +13,12 @@ public:
 
     void Insertar(Estudiante *e);
     void Borrar(int v);
+    void Eliminar(Estudiante *e);
     void Modificar(int id);
-    bool ListaVacia();
     void Mostrar(int);
+    Estudiante* Buscar(int id);
+    bool BuscarEstudiante(int);
+    bool ListaVacia();
     void Siguiente();
     void Anterior();
     Nodo* Primero();

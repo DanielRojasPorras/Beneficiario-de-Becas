@@ -92,6 +92,8 @@ void Lista::Mostrar(int orden)
             nodo = nodo->anterior;
         }
     }
+
+
     cout << endl;
 }
 void Lista::Modificar(int id){
@@ -178,6 +180,48 @@ void Lista::Modificar(int id){
         cout << "El estudiante no existe en el sistema";
     }
     cout << endl;
+}
+Estudiante* Lista::Buscar(int id){
+    pnodo nodo;
+    Ultimo();
+    nodo = plista;
+    if(BuscarEstudiante(id)){
+        while(nodo){
+            if(nodo->valor->getId() == id){
+                return nodo->valor;
+            }
+            nodo = nodo->anterior;
+        }
+    }
+}
+void Lista::Eliminar(Estudiante * e){
+    pnodo nodo;
+    nodo = plista;
+    while(nodo && nodo->valor->getId() < e->getId())
+        nodo = nodo->siguiente;
+    while(nodo && nodo->valor->getId() > e->getId())
+        nodo = nodo->anterior;
+
+    if(!nodo || nodo->valor->getId() != e->getId())
+        return ;
+    if(nodo->anterior)
+        nodo->anterior->siguiente = nodo->siguiente;
+    if(nodo->siguiente)
+        nodo->siguiente->anterior = nodo->anterior;
+    delete nodo;
+}
+
+bool Lista::BuscarEstudiante(int id){
+    pnodo nodo;
+    Ultimo();
+    nodo = plista;
+    while(nodo){
+        if(nodo->valor->getId() == id){
+            return true;
+        }
+        nodo = nodo->anterior;
+    }
+    return false;
 }
 void Lista::Siguiente()
 {
